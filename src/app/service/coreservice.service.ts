@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class CoreserviceService {
-  key = "AIzaSyBUloMMQ-aVjxqW170k60R-P-UJI4BY2Ws";
+  key = "";
   playlist: any;
   constructor(private http: HttpClient) { }
 
