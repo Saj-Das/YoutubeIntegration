@@ -1,0 +1,17 @@
+<div class="title">
+
+    Wellspring
+  </div>
+<div class="col-md-12 ">
+    Courses
+    <div class="col-md-4  row" *ngFor="let data of playlist" (click)="selectplaylist(data)">
+  
+      <div style="text-align:center;width: 200px;height: 200px; "> 
+        <img src={{data.snippet.thumbnails.high.url}} width="200" height="200">
+      </div>
+      {{data.snippet.title}}
+      {{data.snippet.description}}
+  
+  
+    </div>
+  </div>

@@ -1,0 +1,29 @@
+<div class="title">
+
+  Wellspring
+</div>
+<div class="cover">
+<label class="lblwhite">{{getselectedChanhhelData?.snippet.title}}</label><br>
+<label class="lblwhite">{{getselectedChanhhelData?.snippet.description}}</label>
+<div class=" cover row">
+   
+    
+  <div class="col-md-8">
+    <iframe width="100%" height="500" [src]="videourl" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+  </div>
+  <div class="col-md-4">
+    <div class="divenclosure">
+      <accordion>
+        <accordion-group heading={{data.title}} *ngFor="let data of youtubeList" (click)="onsubmit(data)">
+          {{data.description}}
+        </accordion-group>
+      </accordion>
+    </div>
+
+  </div>
+
+</div>
+
+
+</div>
